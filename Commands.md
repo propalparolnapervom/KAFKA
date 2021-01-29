@@ -28,6 +28,19 @@ kafka-topics --bootstrap-server ${KAFKA_URL} --describe --topic ${TOPIC_NAME}
     Topic: test-kafka-connect-vessel-efficiency-offset	Partition: 1	Leader: 3	Replicas: 3,1,2	Isr: 1,3,2
 ```
 
+## CONSUMER GROUP
+
+### Describe
+
+Describe Consumer Group
+```
+KAFKA_URL="<some_host>:<some_port>"
+CONSUMER_GROUP="dev-voyage-monitor-weather-stream-v0.0.19"
+
+kafka-consumer-groups --bootstrap-server ${KAFKA_URL} --group ${CONSUMER_GROUP} --describe
+```
+
+
 ## OFFSET
 
 ### Reset
