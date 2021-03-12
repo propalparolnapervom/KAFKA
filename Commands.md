@@ -12,6 +12,15 @@ KAFKA_URL="<some_host>:<some_port>"
 kafka-topics --bootstrap-server ${KAFKA_URL} --list
 ```
 
+### Delete
+Delete specific topic
+```
+KAFKA_URL="<some_host>:<some_port>"
+TOPIC_NAME="<name_of_specific_topic>"
+kafka-topics --bootstrap-server ${KAFKA_URL} --delete --topic ${TOPIC_NAME}
+```
+
+
 ## PARTITIONS
 
 ### List
